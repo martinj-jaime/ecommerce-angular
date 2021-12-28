@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-header">
+    {{data.name}}
+    <div class="text-success">$ {{data.price}}</div>
+    
+  </div>
+  <div class="card-body">
+    <img src={{data.photo_url}} alt="..">
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-primary" routerLink="/{{data.id}}">Ver Detalle</button>
+  </div>
+</div>

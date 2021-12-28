@@ -1,0 +1,12 @@
+.error {
+    border-color: red;
+}
+
+.warnings {
+    border-color: yellow;
+}
+
+p {
+    margin: 0px;
+    font-size: small;
+}

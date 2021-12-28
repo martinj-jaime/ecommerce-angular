@@ -1,0 +1,24 @@
+<div *ngIf="loading">
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status"></div>
+    </div>
+</div>
+
+<div *ngIf="!loading">
+    <div class="card">
+
+        <div class="card-body row">
+            <div class="col">
+                <img src={{producto[0].photo_url}} alt="..">
+            </div>
+            <div class="col">
+                <h4 class="">{{producto[0].name}}</h4>
+                <p>{{producto[0].description}}</p>
+                <p class="text-success">$ {{producto[0].price}}</p>
+                <button class="btn btn-primary" >Buy</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+

@@ -1,0 +1,22 @@
+<h2>Catalogo de Productos</h2>
+<br>
+
+<div *ngIf="loading">
+    <h4>Si no carga, habilite el protocolo SSL de la api: https://jsonfy.com/items</h4>
+    <br>
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status"></div>
+    </div>
+</div>
+
+<div *ngIf="!loading">
+    <div class="row">
+        <div class="col" *ngFor="let producto of productos">
+            <app-producto 
+            [data]="producto">
+            </app-producto>
+        </div>
+    </div>
+</div>
+
+<br>
